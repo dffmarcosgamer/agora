@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Que Um Amistoso</title>
+
+    <style>
+        /* Estilos Gerais */
+        
+        body {
+            background-color: coral;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        img {
+            max-width: 30%;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: white;
+            color: coral;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .button:hover {
+            background-color: #ff7f50;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .hidden-text,
+        .hidden-content {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        .hidden-content img,
+        .hidden-content video {
+            max-width: 30%;
+            /* Reduzido para 50% */
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        video {
+            width: 30%;
+            /* Reduzido para 50% */
+        }
+        
+        p {
+            font-size: 1.2rem;
+            text-align: justify;
+            line-height: 1.6;
+            margin: 10px auto;
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Página 1 - Mais Que Um Amistoso</h1>
+
+    <img src="FOTODOLIVRO!.jpg" alt="Capa do Livro">
+
+    <!-- Botão que exibe o texto -->
+    <button class="button" onclick="mostrarTexto()">Exibir Texto</button>
+
+    <!-- Texto escondido -->
+    <p class="hidden-text" id="texto-escondido">
+        tudo começa com Nhango um garoto de 13 anos que acabou de entrar na adolecencia. tudo começa com Nhango um garoto de 13 anos que acabou de entrar na adolecencia faz uns dias em que começou as aulas de Nhango . hoje Nhango acorda animado -mãe hoje tem
+        educação fisica. sua mãe chamada Rute o responde. - sim filho, agora trate-se de arrumar seu quarto, comprar tempero, é arrumar a mochila. pois agora Nhango começa a estudar de tarde. Nhango apenas arruma a mochila, ele tem que chegar na escola
+        as 13:00 horas. isso parece um desafio para. Ele pois Nhango sente a sensação que vai se esquecer de ir para escola se sua mãe não o avisar Ele pois Nhango sente a sensação que vai se esquecer de ir para escola se sua mãe não o avisar. quando
+        o relógio bate 13:07, Nhango esquece de comprar o tempero para a janta. então Nhango sai correndo para comprar os temperos para ter oque comer pois de dia ele estava com fome e não teve almoço, sua mãe Rute estava na rua, sua mãe por vez vai para
+        o trabalho de meio periodo Nhango chega na escola atrasado as 13:47 Nhango chega na escola atrasado as 13:47 onde a aula já estava rolando no recreio nhango conversa com seu único amigo que possui por enquanto chamado Leo Leo fala -Nhango voçe
+        quer uma vaga na reserva na educação fisica de hoje Nhango fala- quero, Leo fala -mas voçe tem que provar que e bom mesmo Nhango , nosso time está sendo formado, agora só temos ainda na titularidade no time, eu , o Kaue, o Willian, o Gabriel é
+        o... -tá bom Leo mas voçe trouxe uma bola leo- fala sim mas não conta pro professor Sergio então Leo é Nhango jogam uma partida pênalt como primeiro teste na quadra. RODADA 1 Nhango Parece estar nervoso mesmo estando no gol, Leo bate cruzado Nhango
+        da um pulão mas quando nhango segura a bola ela cai das suas mãos e entra no gol. 0Nx1L. RODADA 2. Nhango faz gol no meio. 1Nx1L. RODADA 3. Nhango defende bonito. 2Nx1L. Rodada 4. Nhango erra pra cima do gol. 2Nx1L Rodada 5 Leo faz o gol. Rodada
+        6 (fInal) Leo Franga. e o placar fica 3Nx2L então Nhango ganha Nhango merenda na escola e volta para a aula Nhango merenda na escola e volta para a aula NO FINAL DA AULA Nhango fala -Leo fala logo, eu estou no time, sim Leo Leo fala. no proximo
+        Capítulo.
+    </p>
+
+    <!-- Botão que exibe fotos e vídeo -->
+    <button class="button" onclick="mostrarConteudo()">Exibir Fotos e Vídeo</button>
+
+    <!-- Conteúdo escondido -->
+    <div class="hidden-content" id="conteudo-escondido">
+        <img src="20250125_155731.jpg" alt="Foto 1">
+        <video controls>
+            <source src="lv_0_20250125155913.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+
+    <script>
+        function mostrarTexto() {
+            const texto = document.getElementById("texto-escondido");
+            texto.style.display = texto.style.display === "none" || texto.style.display === "" ? "block" : "none";
+        }
+
+        function mostrarConteudo() {
+            const conteudo = document.getElementById("conteudo-escondido");
+            conteudo.style.display = conteudo.style.display === "none" || conteudo.style.display === "" ? "block" : "none";
+        }
+    </script>
+
+</body>
+
+</html>
